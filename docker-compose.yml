@@ -9,5 +9,4 @@ services:
    volumes:
      - ./:/app
    command: >
-     sh -c "ls -all"
      sh -c "python manage.py runserver 0.0.0.0:8000"
