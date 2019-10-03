@@ -5,6 +5,8 @@ ENV PYTHONUNBUFFERED 1
 
 # Install dependencies
 COPY ./requirements.txt /requirements.txt
+RUN ls -all /
+RUN ls -all
 RUN pip install -r /requirements.txt
 
 # Setup directory structure
