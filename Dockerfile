@@ -3,6 +3,9 @@ MAINTAINER Zukhriddin Kamalov
 
 ENV PYTHONUNBUFFERED 1
 
+RUN apk update && \
+    apk add --virtual libpq-dev
+
 # Install dependencies
 COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
