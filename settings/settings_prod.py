@@ -31,7 +31,9 @@ ALLOWED_HOSTS = ['https://ongrad.herokuapp.com']
 
 # Application definition
 
-PROJECT_APPS = ['apartment']
+PROJECT_APPS = [
+    'apps.apartment',
+]
 
 INSTALLED_APPS = [
     'django.contrib.admin',
