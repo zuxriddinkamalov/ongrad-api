@@ -10,7 +10,7 @@ COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 # Setup directory structure
-RUN mkdir /app
+RUN mkdir /app/staticfile
 WORKDIR /app
 COPY ./ /app
 
