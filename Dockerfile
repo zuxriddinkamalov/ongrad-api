@@ -10,9 +10,11 @@ COPY ./requirements.txt /requirements.txt
 RUN pip install -r /requirements.txt
 
 # Setup directory structure
+RUN mkdir /app
 RUN mkdir /app/staticfiles
 WORKDIR /app
 COPY ./ /app
+RUN ls -all
 
 RUN adduser -D user
 USER user
