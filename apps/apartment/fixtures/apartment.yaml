@@ -1,0 +1,18 @@
+- model: "apartment.Apartment"
+  pk: 1
+  fields:
+    rooms: 3
+    price: 2000000
+    floor: 40
+    year: "2019-10-25"
+- model: "apartment.Apartment"
+  pk: 2
+  fields:
+    rooms: 1
+    price: 800000
+    floor: 4
+    year: "2019-10-15"
+
+
+
+
