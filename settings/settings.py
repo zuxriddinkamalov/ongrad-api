@@ -25,7 +25,7 @@ SECRET_KEY = '&-towh3t8(-#894wjbnvba-d-7h%zvpb4va5^oairy@82+vc%+'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['https://ongrad.herokuapp.com']
 
 
 # Application definition
