@@ -30,6 +30,6 @@ class ApartmentFilters(filters.FilterSet):
     class Meta:
         model = Apartment
         fields = (
-            'rooms', 'min_price', 'min_price', 'first_floor', 'last_floor',
+            'rooms', 'min_price', 'min_price', 'start_floor', 'last_floor',
             'year'
         )
