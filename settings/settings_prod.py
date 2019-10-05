@@ -14,7 +14,7 @@ from .settings import *
 
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://ongrad.herokuapp.com']
+ALLOWED_HOSTS = ['*']
 
 WSGI_APPLICATION = 'settings.wsgi.application'
 
