@@ -22,8 +22,14 @@ class ApartmentFilters(filters.FilterSet):
     min_price = filters.NumberFilter(field_name="price", lookup_expr='gte')
     max_price = filters.NumberFilter(field_name="price", lookup_expr='lte')
 
+    start_floor = filters.NumberFilter(field_name="max_floor",
+                                       lookup_expr='gte')
+    last_floor = filters.NumberFilter(field_name="max_floor",
+                                      lookup_expr='lte')
+
     class Meta:
         model = Apartment
         fields = (
-            'rooms', 'min_price', 'min_price', 'floor', 'year'
+            'rooms', 'min_price', 'min_price', 'first_floor', 'last_floor',
+            'year'
         )
