@@ -56,9 +56,15 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
 ]
 
 ROOT_URLCONF = 'settings.urls'
+
+CORS_ORIGIN_WHITELIST = (
+    'https://ongrad-ui.herokuapp.com',
+    'http://localhost:8080',
+)
 
 TEMPLATES = [
     {
