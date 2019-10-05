@@ -79,7 +79,7 @@ TEMPLATES = [
 
 CORS_ORIGIN_WHITELIST = (
     'https://ongrad-ui.herokuapp.com',
-    'localhost:8080',
+    'http://localhost:8080',
 )
 
 WSGI_APPLICATION = 'settings.wsgi.application'
