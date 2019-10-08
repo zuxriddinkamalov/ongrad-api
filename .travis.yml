@@ -4,8 +4,15 @@ python:
 
 services:
   - docker
+  - postgresql
 
-before_script: pip install docker-compose
+env:
+  - DJANGO_SETTINGS_MODULE=settings.settings_test
+
+before_script:
+  - pip install docker-compose
+  - psql -c "CREATE ROLE test WITH LOGIN ENCRYPTED PASSWORD 'test';" -U postgres
+  - psql -c "CREATE DATABASE test WITH OWNER = test ENCODING = 'UTF8';" -U postgres
 
 script:
   - docker-compose run --rm app sh -c "python manage.py test && flake8"

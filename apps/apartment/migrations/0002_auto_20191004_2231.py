@@ -7,6 +7,9 @@ from django.core import serializers
 
 
 def load_fixture(apps, schema_editor):
+    env_base = os.environ.get("DJANGO_SETTINGS_MODULE")
+    if env_base != 'settings_prod':
+        return
     fixture_file = os.path.join(settings.BASE_DIR, 'apartment.json')
     fixture = open(fixture_file)
     objects = serializers.deserialize('json', fixture, ignorenonexistent=True)

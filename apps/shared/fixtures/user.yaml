@@ -1,0 +1,38 @@
+- model: "auth.User"
+  pk: 1
+  fields:
+    username: "test1@example.com"
+    last_name: "Sparrow"
+    first_name: "Jack"
+    password: "pbkdf2_sha256$100000$sjDSZHUAvGkm$qX1hn8xwNLGAMZTlrWBCjiNron7qstAyA6foULZ7ZYI="
+    is_superuser: True
+    is_staff: True
+- model: "auth.User"
+  pk: 2
+  fields:
+    username: "test2@example.com"
+    last_name: "The Ripper"
+    first_name: "Jack"
+    password: "pbkdf2_sha256$30000$rirjQwUOYtl8$EB8NuU4D9x005OMLkCZ9NsTX9TpZ3oQLjsg9gPqIc2Q="
+    is_superuser: False
+    is_staff: True
+- model: "auth.User"
+  pk: 3
+  fields:
+    username: "test3@example.com"
+    last_name: "The Bean Tree"
+    first_name: "Jack"
+    password: "pbkdf2_sha256$30000$rirjQwUOYtl8$EB8NuU4D9x005OMLkCZ9NsTX9TpZ3oQLjsg9gPqIc2Q="
+    is_superuser: False
+    is_active: False
+    is_staff: True
+- model: "auth.User"
+  pk: 4
+  fields:
+    username: "test4@example.com"
+    last_name: "The Frost"
+    first_name: "Jack"
+    password: "pbkdf2_sha256$30000$rirjQwUOYtl8$EB8NuU4D9x005OMLkCZ9NsTX9TpZ3oQLjsg9gPqIc2Q="
+    is_superuser: False
+    is_active: True
+    is_staff: True

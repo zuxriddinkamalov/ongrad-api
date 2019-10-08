@@ -3,16 +3,119 @@
   fields:
     rooms: 3
     price: 2000000
-    floor: 40
+    floor: 2
+    max_floor: 20
     year: "2019-10-25"
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
 - model: "apartment.Apartment"
   pk: 2
   fields:
     rooms: 1
     price: 800000
     floor: 4
+    max_floor: 12
     year: "2019-10-15"
-
-
-
-
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 3
+  fields:
+    rooms: 6
+    price: 5000000
+    floor: 4
+    max_floor: 20
+    year: "2011-10-15"
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 4
+  fields:
+    rooms: 4
+    price: 4800000
+    floor: 4
+    year: "2011-10-15"
+    max_floor: 20
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 5
+  fields:
+    rooms: 2
+    price: 1500000
+    floor: 1
+    year: "2010-10-15"
+    max_floor: 9
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 6
+  fields:
+    rooms: 3
+    price: 2500000
+    floor: 2
+    year: "2015-10-15"
+    max_floor: 9
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 7
+  fields:
+    rooms: 3
+    price: 3500000
+    floor: 3
+    year: "2014-10-15"
+    max_floor: 4
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 8
+  fields:
+    rooms: 2
+    price: 2500000
+    floor: 3
+    year: "2013-10-15"
+    max_floor: 9
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 9
+  fields:
+    rooms: 3
+    price: 2500000
+    floor: 4
+    year: "2003-10-15"
+    max_floor: 4
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 10
+  fields:
+    rooms: 4
+    price: 3500000
+    floor: 2
+    year: "2003-10-15"
+    max_floor: 9
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
+- model: "apartment.Apartment"
+  pk: 11
+  fields:
+    rooms: 5
+    price: 2758652
+    floor: 9
+    year: "2003-10-15"
+    max_floor: 9
+    address: "1600 Amphitheatre Parkway Mountain View, CA 94043"
+    modified_date: "2019-10-04T00:00:00+00:00"
+    created_date: "2019-10-03T00:00:00+00:00"
