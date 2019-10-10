@@ -1,3 +1,4 @@
+from django.db.models import F
 import django_filters as filters
 from django_filters.filters import Filter
 from rest_framework.exceptions import ValidationError
@@ -21,11 +22,16 @@ class ApartmentFilters(filters.FilterSet):
     rooms = ListFilter(field_name='rooms', lookup_expr='in')
     min_price = filters.NumberFilter(field_name="price", lookup_expr='gte')
     max_price = filters.NumberFilter(field_name="price", lookup_expr='lte')
-
+    not_first_last = filters.BooleanFilter(method='filter_by_floor')
     start_floor = filters.NumberFilter(field_name="max_floor",
                                        lookup_expr='gte')
     last_floor = filters.NumberFilter(field_name="max_floor",
                                       lookup_expr='lte')
+
+    def filter_by_floor(self, qs, name, value):
+        if value:
+            return qs.exclude(floor=1).exclude(floor=F('max_floor'))
+        return qs
 
     class Meta:
         model = Apartment
